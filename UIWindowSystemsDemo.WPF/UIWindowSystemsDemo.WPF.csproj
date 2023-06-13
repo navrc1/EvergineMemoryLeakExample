@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Evergine.DirectX11" Version="2023.3.1.1" />
+    <PackageReference Include="Evergine.HLSLEverywhere" Version="2023.3.1.1" />
+    <PackageReference Include="Evergine.XAudio2" Version="2023.3.1.1" />
+    <PackageReference Include="Evergine.WPF" Version="2023.3.1.1" />
+    <PackageReference Include="Evergine.Targets" Version="2023.3.1.1" />
+    <PackageReference Include="Evergine.Targets.Windows" Version="2023.3.1.1" />
+    <PackageReference Include="Vortice.Direct3D9" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UIWindowSystemsDemo\UIWindowSystemsDemo.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="SeparatedWindows.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+</Project>
